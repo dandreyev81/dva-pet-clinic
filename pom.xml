@@ -39,7 +39,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:dandreyev81/dva-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:ssh@github.com:dandreyev81/dva-pet-clinic.git</developerConnection>
       <tag>DVA-Pet-Clinic-0.0.7</tag>
   </scm>
 
