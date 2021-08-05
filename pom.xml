@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.dandreyev</groupId>
     <artifactId>DVA-Pet-Clinic</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.7</version>
     <name>DVA-Pet-Clinic</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -40,7 +40,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:dandreyev81/dva-pet-clinic.git</developerConnection>
-      <tag>DVA-Pet-Clinic-0.0.6</tag>
+      <tag>DVA-Pet-Clinic-0.0.7</tag>
   </scm>
 
 </project>
