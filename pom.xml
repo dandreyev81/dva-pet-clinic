@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.dandreyev</groupId>
     <artifactId>DVA-Pet-Clinic</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6-SNAPSHOT</version>
     <name>DVA-Pet-Clinic</name>
     <description>Demo project for Spring Boot</description>
     <properties>
