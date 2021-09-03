@@ -4,8 +4,6 @@ import com.dandreyev.dvapetclinic.model.Owner;
 import com.dandreyev.dvapetclinic.model.Vet;
 import com.dandreyev.dvapetclinic.services.OwnerService;
 import com.dandreyev.dvapetclinic.services.VetService;
-import com.dandreyev.dvapetclinic.services.map.OwnerServiceMap;
-import com.dandreyev.dvapetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

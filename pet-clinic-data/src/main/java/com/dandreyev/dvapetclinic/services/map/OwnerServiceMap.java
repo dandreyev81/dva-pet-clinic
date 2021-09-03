@@ -2,9 +2,11 @@ package com.dandreyev.dvapetclinic.services.map;
 
 import com.dandreyev.dvapetclinic.model.Owner;
 import com.dandreyev.dvapetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner findByID(Long id) {
