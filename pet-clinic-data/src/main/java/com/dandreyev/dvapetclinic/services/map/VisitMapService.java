@@ -2,11 +2,14 @@ package com.dandreyev.dvapetclinic.services.map;
 
 import com.dandreyev.dvapetclinic.model.Visit;
 import com.dandreyev.dvapetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
+
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
     @Override
     public Visit findByID(Long id) {
