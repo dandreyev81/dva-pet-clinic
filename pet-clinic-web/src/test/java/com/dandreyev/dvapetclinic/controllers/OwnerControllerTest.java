@@ -43,28 +43,21 @@ class OwnerControllerTest {
     }
 
     @Test
-    void listOwners() throws Exception {
-        when(ownerService.findAll()).thenReturn(owners);
-
-        mockMvc.perform(get("/owners")).andExpect(status().isOk());
-    }
-
-    @Test
     void findOwners() throws Exception {
         mockMvc.perform(get("/owners/find"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("notimplemented"));
+                .andExpect(view().name("owners/findOwners"));
 
         verifyNoInteractions(ownerService);
     }
 
-    @Test
-    void displayOwner() throws Exception {
-        when(ownerService.findByID(anyLong())).thenReturn(Owner.builder().id(1L).build());
-
-        mockMvc.perform(get("/owners/123"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("owners/ownerDetails"))
-                .andExpect(model().attribute("owner", isNotNull()));
-    }
+//    @Test
+//    void displayOwner() throws Exception {
+//        when(ownerService.findByID(anyLong())).thenReturn(Owner.builder().id(1L).build());
+//
+//        mockMvc.perform(get("/owners/123"))
+//                .andExpect(status().isOk())
+//                .andExpect(view().name("owners/ownerDetails"))
+//                .andExpect(model().attribute("owner", isNotNull()));
+//    }
 }
